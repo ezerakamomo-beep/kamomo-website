@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions | Kasenyi Secondary School</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <img src="logo.jpg" alt="Kasenyi Secondary School crest">
+        <span>
+          <span class="logo-name">Kasenyi Secondary School</span>
+          <span class="logo-sub">Mubende · Uganda</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a class="active" href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-primary btn-sm header-cta" href="admissions.html">Apply now</a>
+        <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About us</a>
+      <a class="active" href="admissions.html">Admissions</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary" href="admissions.html">Apply now</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <img src="admin.jpg" alt="School administration block">
+      <div class="page-hero-overlay"></div>
+      <div class="wrap page-hero-inner">
+        <div>
+          <p class="kicker light">Admissions</p>
+          <h1 class="mt-3">Join Kasenyi SS</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>How entry works</h2>
+        <ol class="steps">
+          <li class="step">
+            <p class="step-num">01</p>
+            <h3 class="mt-3">Enquire</h3>
+            <p class="muted mt-3">Visit the school, call the office, or send a message with the learner’s current class.</p>
+          </li>
+          <li class="step">
+            <p class="step-num">02</p>
+            <h3 class="mt-3">Submit documents</h3>
+            <p class="muted mt-3">Bring a birth certificate, previous school reports, two passport photos and the filled form.</p>
+          </li>
+          <li class="step">
+            <p class="step-num">03</p>
+            <h3 class="mt-3">Assessment</h3>
+            <p class="muted mt-3">O-Level and A-Level entry may include a placement interview or written exercise.</p>
+          </li>
+          <li class="step">
+            <p class="step-num">04</p>
+            <h3 class="mt-3">Offer & reporting</h3>
+            <p class="muted mt-3">Successful applicants receive a joining letter, fee structure and reporting date.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="bg-cream section-lg">
+      <div class="wrap split split-2">
+        <div>
+          <h2>What to bring</h2>
+          <ul class="checklist">
+            <li>Completed application form (online or collected from the office).</li>
+            <li>Copy of birth certificate and most recent school reports.</li>
+            <li>Two recent passport photographs.</li>
+            <li>Leaving certificate from the previous school, where applicable.</li>
+            <li>UNEB result slip for Senior 5 applicants.</li>
+          </ul>
+          <p class="muted mt-6">Fees are published each year by the Board of Governors. Please call +256 772 494 855 or visit the bursar’s office for the current structure.</p>
+          <h3 class="mt-8">Term one, 2026</h3>
+          <ul class="dates">
+            <li><span>Visitation day</span><span class="note">Term one, 2026</span></li>
+            <li><span>Sports day</span><span class="note">Term one, 2026</span></li>
+            <li><span>Career guidance week</span><span class="note">Term one, 2026</span></li>
+            <li><span>Talent & MDD days</span><span class="note">Term one, 2026</span></li>
+            <li><span>District soccer gala</span><span class="note">Term one, 2026</span></li>
+            <li><span>National examinations week</span><span class="note">As gazetted by UNEB</span></li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <h2>Admission enquiry</h2>
+          <p class="muted mt-3">Fields marked with an asterisk are required. The office will reply by phone or email.</p>
+          <p class="success" data-success hidden>Thank you. Your enquiry has been recorded. We will be in touch shortly.</p>
+          <form data-form>
+            <div class="form-group">
+              <label for="parent">Parent / guardian *</label>
+              <input id="parent" name="parent" required>
+            </div>
+            <div class="form-group">
+              <label for="learner">Learner’s name *</label>
+              <input id="learner" name="learner" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="class">Intended class *</label>
+                <input id="class" name="intendedClass" placeholder="e.g. Senior 1" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input id="phone" name="phone" type="tel" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email">
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes</label>
+              <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" type="submit">Submit enquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h4 style="font-family:var(--font-display);font-size:1.25rem;">Kasenyi SS</h4>
+        <p>Empowering Futures, Shaping Excellence</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Office</h4>
+        <ul>
+          <li>P.O. Box 282, Kasenyi</li>
+          <li>Kasenyi, Mubende Municipality, Uganda</li>
+          <li><a href="tel:+256772494855">+256 772 494 855</a></li>
+          <li><a href="mailto:kasenyiss1985@gmail.com">kasenyiss1985@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Monday to Friday<br>8:00 AM – 5:00 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="wrap">© 2026 Kasenyi Secondary School. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="site.js"></script>
+</body>
+</html>
